@@ -165,6 +165,13 @@ main {
   font-size: 20px;
 }
 
+.completion-badge {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+
 /* CSS for home page */
 
 .about {
