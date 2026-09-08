@@ -1,9 +1,9 @@
 :root {
   /* variables */
-  --cg-black: rgb(30, 32, 32);
+  --cg-black: rgb(19, 44, 17);
   --cg-blue: rgb(36, 94, 255);
-  --cg-grey: rgb(243, 243, 243);
-  --cg-white: rgb(255, 255, 255);
+  --cg-soft-green: rgb(143, 165, 142);
+  --cg-lime: rgb(148, 182, 13);
 }
 
 html {
@@ -11,7 +11,14 @@ html {
 }
 
 body {
-  background: var(--cg-grey);
+  /* Use background-image to display the file */
+  background-image: url('background-gif.gif');
+  /* Ensure it scales perfectly to cover the viewport */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -35,7 +42,7 @@ body {
   text-align: center;
 
   background-color: var(--cg-black);
-  color: var(--cg-white);
+  color: var(--cg-lime);
   padding: 0px 0px;
 
   /* Debug border */
@@ -54,7 +61,7 @@ body {
 }
 
 .navbar a {
-  color: var(--cg-white);
+  color: var(--cg-lime);
   font-weight: bold;
   margin: 0 12px;
   text-decoration: none;
@@ -127,7 +134,7 @@ main {
 
 .project-details {
   display: flex;
-  background-color: var(--cg-white);
+  background-color: var(--cg-lime);
   width: 30%;
   height: 500px;
   flex-shrink: 1;
@@ -211,7 +218,7 @@ main {
 .button {
   background-color: var(--cg-black);
   border: none;
-  color: var(--cg-white);
+  color: var(--cg-lime);
 
   font-family: monospace;
 
@@ -263,7 +270,7 @@ form {
   justify-content: center;
   align-items: center;
   background-color: var(--cg-black);
-  color: var(--cg-white);
+  color: var(--cg-lime);
   position: absolute;
   bottom: 0;
   width: 100%;
