@@ -1,7 +1,7 @@
 :root {
   /* variables */
   --cg-black: rgb(19, 44, 17);
-  --cg-blue: rgb(36, 94, 255);
+  --cg-blue: rgb(216, 162, 34);
   --cg-soft-green: rgb(143, 165, 142);
   --cg-lime: rgb(148, 182, 13);
 }
@@ -96,6 +96,8 @@ main {
 }
 
 .page-title {
+  color: var(--cg-blue);
+ -webkit-text-stroke: 2px var(--cg-black);
   display: flex;
   justify-content: center;
   font-size: 40px;
@@ -159,7 +161,7 @@ main {
 }
 
 .project-details a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-lemon);
   text-decoration: underline;
 }
 
